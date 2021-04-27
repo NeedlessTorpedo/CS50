@@ -23,16 +23,6 @@ void validateCard(long number)
     long total_sum = even_digit(number, numOfDigits) + odd_digit(number, numOfDigits);
     long final_num = total_sum % 10;
 
-    if (number == 369421438430814)
-    {
-        printf("INVALID\n");
-    }
-    
-    else if (number == 5673598276138003)
-    {
-        printf("INVALID\n");
-    }
-
     //VISA
     else if (final_num == 0 && numOfDigits == 13 )           //if the Luhn's Algorithm works and if the number of digits is 13
     {
